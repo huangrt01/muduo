@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
   for (int i = 0; i < 10000; ++i)
   {
     LOG_INFO << line << i;
-
-    usleep(1000);
+    LOG_WARN << line << i;
+    usleep(10000);
   }
 }
